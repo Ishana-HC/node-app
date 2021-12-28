@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ssh -o StrictHostKeyChecking=no node-app@15.206.57.14  <<EOF
+ssh -tt -o StrictHostKeyChecking=no node-app@15.206.57.14  <<EOF
  cd ~/node-app
  git pull
  npm install 
