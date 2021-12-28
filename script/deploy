@@ -1,5 +1,4 @@
 #!/bin/sh
-
 ssh ezderman@NODE.SERVER.IP <<EOF
  cd ~/node-app
  git pull
