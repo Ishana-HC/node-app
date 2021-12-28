@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ssh -tt  node-app@15.206.57.14 <<EOF
+sudo ssh -tt  node-app@15.206.57.14 <<EOF
  cd ~/node-app
  git pull
  npm install 
