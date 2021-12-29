@@ -1,9 +1,10 @@
 #!/bin/sh
 
-ssh -tt -o StrictHostKeyChecking=no node-app@15.206.57.14  <<EOF
- cd ~/node-app
- git pull
- npm install 
- pm2 restart all
- exit
-EOF
+ ssh -o StrictHostKeyChecking=no -tt -i node-app@15.206.57.14  <<EOF       
+     cd backend
+     npm install
+     git pull
+     pm2 restart all
+     echo 'Process completed successfully.'
+     exit      
+    EOF
